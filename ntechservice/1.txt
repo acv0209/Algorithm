@@ -1,0 +1,22 @@
+class Solution {
+  public int solution(int num) {
+      int answer = 0;
+
+      for (int i = 3; i <= num; i++) {
+          int temp = i;
+          while(temp > 0) {
+              int number = temp % 10;
+              if (number == 0) {
+
+              }else if ((number % 3) == 0) {
+                  answer++;
+                  break;
+              }
+
+              temp = temp / 10;
+          }
+      } //for 
+
+      return answer;
+  }
+}
